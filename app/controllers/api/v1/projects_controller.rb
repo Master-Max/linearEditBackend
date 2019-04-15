@@ -1,8 +1,9 @@
 class Api::V1::ProjectsController < ApplicationController
   def index
-    puts "The Params #{params[:user_id]}"
+    # puts "The Params #{params[:user_id]}"
     # @projects = Project.all.select{|p| p.user_id === params[:user_id]}
-    @projects = Project.where(user_id: params[:user_id])
+    # @projects = Project.where(user_id: params[:user_id])
+    @projects = Project.all
     render json: @projects
   end
 

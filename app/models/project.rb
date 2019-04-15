@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-  belongs_to :user
+
 
   def assemble_movie
     path = "/Users/mx/tmp/#{self.id}/"
